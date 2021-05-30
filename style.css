@@ -1,0 +1,148 @@
+:root {
+    --my-dark-color: rgb(133, 133, 131);
+     --my-gray-color: #141313;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: black;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Risque', cursive;
+}
+
+h1 {
+    color: rgb(133, 133, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin: 0 auto;
+}
+
+/* Box styling */
+
+.box {
+    width: 100vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: var(--my-dark-color) solid 2px;
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+input {
+    padding: 15px 15px;
+    border: var(--my-dark-color) solid 2px;
+    border-radius: 0.5em;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#description {
+    grid-column: span 2;
+    padding-bottom: 2em;
+}
+
+button {
+    background-color: rgb(55, 226, 55);
+    padding: 10px 20px 10px 20px;
+    border-radius: 0.5em;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    grid-column: span 2;
+}
+
+/* Box2 styling */
+.box2 {
+    width: 120vh;
+    /* min-height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border: var(--my-dark-color) solid 2px;
+    border-radius: 1em;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.grid-div {
+    display: grid;
+    grid-template-columns: repeat(4, 50%);
+    align-items: stretch;
+    grid-gap: 10px;
+    gap: 10px;
+    padding: auto 10px;
+}
+.grid-div:not(:first-child){
+    margin-top: 15px
+}
+
+
+.grid-item {
+    width: 100%;
+    margin-left: 40px;
+}
+
+/* #grid2 {
+    margin: 0 auto;
+} */
+
+/* .grid-item button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+} */
+
+p {
+    font-family: inherit;
+    font-size: 13px;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+#remove {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-self: end;
+    margin: 0 auto;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--my-gray-color);
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
